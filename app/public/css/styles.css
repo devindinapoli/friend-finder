@@ -32,3 +32,8 @@ body{
 li:hover{
 background-color: rgb(162,205,185);
 }
+footer{
+    background-color: rgb(20,61,86);
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
