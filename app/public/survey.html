@@ -163,7 +163,7 @@
             </div>
         </div>
 
-        <div id="match-modal" class="modal">
+        <div id="modal1" class="modal">
             <div class="modal-content">
                 <h4>Your Match</h4>
                 <hr>
@@ -180,7 +180,7 @@
                 $('select').material_select();
                 $('.modal').modal({
 
-                dismissible: true,
+                dismissible: false,
 				opacity: .5, 
 				inDuration: 300, 
 				outDuration: 200, 
@@ -191,9 +191,7 @@
 
             $("#submit-button").on("click", function(event){
                 event.preventDefault();
-
                 var userAnswers = {
-
                     name: $("#name").val().trim(),
                     photo: $("#photo").val().trim(),
                     scores: [
@@ -214,11 +212,11 @@
                 //console.log('userAnswers = ' + JSON.stringify(userAnswers));
 
                 $.post("/api/friends", userAnswers)
-                .done(function(data){
+            .done(function(data){
                     $("#userMatch").html(data.matchName);
-                    $("#userMatchPic").attr("src", data.matchPic)
-                    $("#match-modal").modal("open");
-                });
+                    $("#userMatchPic").attr("src", data.matchPic);
+                    $("#modal1").modal("open");
+                })
             });
         </script>
     </body>
