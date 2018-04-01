@@ -1,6 +1,7 @@
 .nav-wrapper{
-    background-color: black;
-    padding-left: 5px;
+    background-color: rgb(20,61,86);
+    padding-left: 15px;
+    font-family: 'Fjord One', serif;
 }
 
 .main{
@@ -9,6 +10,7 @@
     color: white;
     margin-top: 25px;
     text-align: center;
+    font-family: 'Fjord One', serif;
 }
 
 body{
@@ -23,4 +25,10 @@ body{
     margin: 50px;
     height: 500px;
     overflow: scroll;
+}
+.really{
+    font-family: 'Niconne', cursive;
+}
+li:hover{
+background-color: rgb(162,205,185);
 }
