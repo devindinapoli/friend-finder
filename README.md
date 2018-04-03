@@ -4,7 +4,7 @@ This application, Friend Finder, is a compatibility application to match the use
 
 For this application, I have used Node and Express to handle the routing, and deployed it to Heroku for everyone to use.
 
-In the application, the user fills out a form with their name and a ink to their photo, and then takes a quick 10 question survey. When they submit their answers, their total "score" is added, then compared to other users to find their overall "best match". In the end, their name and picture is displayed. Then, the user is prompted to try again (if they choose).
+In the application, the user fills out a form with their name and a link to their photo, and then takes a quick 10 question survey. When they submit their answers, their total "score" is added, then compared to other users to find their overall "best match". In the end, their name and picture is displayed. Then, the user is prompted to try again (if they choose).
 
 
 ## Deployed via Heroku
