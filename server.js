@@ -1,11 +1,14 @@
+//require the usual
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 
 var app = express();
+//define the port, make it work with Heroku as well
 var PORT = process.env.PORT || 3000;
-
+//Exposed my public folder, which includes css
 app.use(express.static(path.join(__dirname, './app/public')));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
