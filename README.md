@@ -10,4 +10,4 @@ In the application, the user fills out a form with their name and a ink to their
 ## Deployed via Heroku
 If you would like to demo the application, the link is below.
 
-[Friend Finder via Heroku](https://blueberry-crumble-63720.herokuapp.com/survey)
+[Friend Finder via Heroku](https://blueberry-crumble-63720.herokuapp.com/)

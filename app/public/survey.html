@@ -175,7 +175,9 @@
             </div>
         </div>
         
+        
         <script type="text/javascript">
+        //Making the modal and select forms active//
             $(document).ready(function() {
                 $('select').material_select();
                 $('.modal').modal({
@@ -188,9 +190,10 @@
                 endingTop: '10%'
                 });
             });
-
+            //when the submit button is clicked...
             $("#submit-button").on("click", function(event){
                 event.preventDefault();
+                //takes the user inputs and stores them into a variable
                 var userAnswers = {
                     name: $("#name").val().trim(),
                     photo: $("#photo").val().trim(),
@@ -210,7 +213,9 @@
                 
                 //checking to see if data was stored    
                 //console.log('userAnswers = ' + JSON.stringify(userAnswers));
-
+                
+                //takes the input, posts into friends api, then fills the modal
+                //and opens modal IF there is information sent via apiRoutes
                 $.post("/api/friends", userAnswers)
             .done(function(data){
                     $("#userMatch").html(data.matchName);
